@@ -69,4 +69,8 @@ public class Triple_Calc {
         
         return new Triple((a-d), (b-e), (c-f));
     }
+    
+    public static double normVector(Triple v){
+    	return Math.sqrt(Triple_Calc.dotProduct(v,v));
+    }
 }

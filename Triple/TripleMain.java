@@ -17,8 +17,9 @@ public class TripleMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        TripleMain.exercise1();
-       // TripleMain.classExercise1();
+        //TripleMain.exercise1();
+        //TripleMain.classExercise1();
+    	TripleMain.classNormCheck();
     }
     
     public static void exercise1(){
@@ -53,5 +54,10 @@ public class TripleMain {
         System.out.println("Enter a line:");
         Triple a = new Triple( console );
         System.out.println("Enter another line");
+    }
+    
+    public static void classNormCheck(){
+    	Triple test = new Triple(5,6,7);
+    	System.out.println(Triple_Calc.normVector(test));
     }
 }
