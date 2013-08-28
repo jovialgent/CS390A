@@ -28,11 +28,11 @@ public class Triple {
     }
     
     public Triple(Scanner console){
-        System.out.println("X: ");
+        //System.out.println("X: ");
         x = console.nextDouble();
-        System.out.print("Y: ");
+        //System.out.print("Y: ");
         y = console.nextDouble();
-        System.out.print("Z: ");
+        //System.out.print("Z: ");
         z = console.nextDouble();
     }
     
