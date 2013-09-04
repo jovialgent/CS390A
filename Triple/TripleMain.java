@@ -58,6 +58,6 @@ public class TripleMain {
     
     public static void classNormCheck(){
     	Triple test = new Triple(5,6,7);
-    	System.out.println(Triple_Calc.normVector(test));
+    	System.out.println(Triple_Calc.norm(test));
     }
 }
