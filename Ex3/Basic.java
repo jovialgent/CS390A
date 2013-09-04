@@ -1,4 +1,4 @@
-package classCode_9_4_2013;
+package Ex3;
 
 /*  framework to be extended to make desired
     graphical, event-driven application

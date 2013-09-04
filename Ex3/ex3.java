@@ -10,22 +10,38 @@ import org.lwjgl.opengl.*;
 import Triple.*;
 
 
-public class ex3 {
+public class Ex3 extends Basic {
+	
+		public Ex3(){
+			super("Exercise 3", 600, 400, 30);
+		}
 
 		public static void main(String[] args){
-			Triple x = new Triple(4,5,6);
-			System.out.println(x);
-			try {
-				Display.setDisplayMode(new DisplayMode(800,600));
-				Display.create();
-			} catch (LWJGLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			while(!Display.isCloseRequested()){
-				Display.update();
-			}
+			Ex3 test = new Ex3();
+			test.start();
+		}
+
+		@Override
+		protected void init() {
+			// TODO Auto-generated method stub
 			
-			Display.destroy();
+		}
+
+		@Override
+		protected void processInputs() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		protected void update() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		protected void display() {
+			// TODO Auto-generated method stub
+			
 		}
 }
