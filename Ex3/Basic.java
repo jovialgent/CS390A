@@ -1,4 +1,4 @@
-package Ex3;
+package ex3;
 
 /*  framework to be extended to make desired
     graphical, event-driven application
