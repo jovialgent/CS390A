@@ -11,6 +11,11 @@ public class Point {
 		this.color = color;
 	}
 	
+	public Point(double[] location, int[] rgb){
+		this.location = new Triple(location[0], location[1], location[2]);
+		this.color = new RGB(rgb[0], rgb[1], rgb[2]);
+	}
+	
 	public Triple getLocation(){
 		return location;
 	}

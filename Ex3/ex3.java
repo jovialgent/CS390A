@@ -21,17 +21,15 @@ public class Ex3 extends Basic {
 		}
 
 		public static void main(String[] args){
-			Ex3 test = new Ex3("test.txt");
-
-		    for(int i = 1; i < 100; i++ ){
-		    	test.addPoint(new Point( new Triple( 1+(.1*i), 1+(.1*i), 0 ) ,   RGB.RED ));
-		    	test.addPoint(new Point( new Triple( 0+(.1*i), 10-(.1*i), 0 ) ,   RGB.BLUE ));
-		    	
-		    }
-		    
-		    System.out.println(test.numPoints());
+			Ex3 test = new Ex3("test.txt"); 
+			
+			
+			
+			
+			
 			test.start();
 		}
+		
 		
 		
 		@Override
