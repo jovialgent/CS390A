@@ -14,20 +14,20 @@ import Triple.*;
 
 
 public class Ex3 extends Basic {
-		private ArrayList<Point> points = new ArrayList<Point>();
+		private ArrayList<Point> points;
+		private Point eye, a, b, c; 
 	
 		public Ex3(String fileName){
 			super("Exercise 3", 500, 500, 40);
+			this.points = new ArrayList<Point>();
 		}
 
 		public static void main(String[] args){
+			
 			Ex3 test = new Ex3("test.txt"); 
-			
-			
-			
-			
-			
+				
 			test.start();
+						
 		}
 		
 		
@@ -65,7 +65,7 @@ public class Ex3 extends Basic {
 		    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		    
 		    
-		   
+		    glBegin( GL_POINTS);
 		    // set the color of the quad (R,G,B,A)
 		    for(int i = 0; i < points.size(); i++){
 		    	Point test = points.get(i);
@@ -73,16 +73,22 @@ public class Ex3 extends Basic {
 		    glColor3f(test.getColor().getRed(),test.getColor().getGreen(),test.getColor().getBlue());
 		    	
 		    // draw quad
-		    glBegin( GL_POINTS);
+		   
 		       glVertex3d(test.getLocation().getX(), test.getLocation().getY(), test.getLocation().getZ());
-		    glEnd();
+		   
 		    }
+		    
+		    glEnd();
 			
 		}
 		
 		public void addPoint(Point add){
 			this.points.add(add);
 			
+		}
+		
+		public Point getPoint(int index){
+			return this.points.get(index);
 		}
 		
 		public int numPoints(){

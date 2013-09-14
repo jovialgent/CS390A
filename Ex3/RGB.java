@@ -4,6 +4,7 @@ import org.lwjgl.opengl.GL11;
 
 public class RGB {
 	private float red, green, blue;
+	private int r,g,b;
 	
 	/**
 	 * This constructor will take three integers as RGB inputs and then convert them to
@@ -13,6 +14,9 @@ public class RGB {
 	 * @param b - blue value
 	 */
 	public RGB(int r, int g, int b){
+		this.r = r;
+		this.g = g;
+		this.b = b;
 		this.red = (float) (r/255.0);
 		this.green = (float) (g/255.0);
 		this.blue = (float) (b/255);
@@ -40,6 +44,10 @@ public class RGB {
 	 */
 	public float getBlue(){
 		return blue;
+	}
+	
+	public String getRGB(){
+		return r + " " + g + " " + b;
 	}
 	
 	public static RGB RED = new RGB(255,0,0);

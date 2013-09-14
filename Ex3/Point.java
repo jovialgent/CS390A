@@ -23,4 +23,8 @@ public class Point {
 	public RGB getColor(){
 		return color;
 	}
+	
+	public String toString(){
+		return location.getX() + " " + location.getY() + " " + location.getZ() + " " + color.getRGB();
+	}
 }

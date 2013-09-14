@@ -19,7 +19,11 @@ public class TripleMain {
         // TODO code application logic here
         //TripleMain.exercise1();
         //TripleMain.classExercise1();
-    	TripleMain.classNormCheck();
+    	//TripleMain.classNormCheck();
+    	//TripleMain.testGetN();
+    	//TripleMain.testGetLamda();
+    	//TripleMain.testGetIntersection();
+    	TripleMain.testGetABG();
     }
     
     public static void exercise1(){
@@ -59,5 +63,50 @@ public class TripleMain {
     public static void classNormCheck(){
     	Triple test = new Triple(5,6,7);
     	System.out.println(Triple_Calc.norm(test));
+    }
+    
+    public static void testGetN(){
+    	Triple a = new Triple(0,0,0);
+    	Triple b = new Triple(1,0,0);
+    	Triple c = new Triple(0,1,0);
+    	
+    	Triple n = Triple_Calc.getN(a, b, c);
+    	
+    	System.out.println(n.toString());
+    }
+    
+    public static void testGetLamda(){
+    	Triple a = new Triple(0,0,0);
+    	Triple b = new Triple(1,0,0);
+    	Triple c = new Triple(0,1,0);
+    	Triple p = new Triple(.75, .75, -1);
+    	Triple e = new Triple(.5, .5, 1);
+    	
+    	double answer = Triple_Calc.getLambda(a, b, c, p, e);
+    	
+    	System.out.println(answer);
+    }
+    
+    public static void testGetIntersection(){
+    	Triple a = new Triple(0,0,0);
+    	Triple b = new Triple(1,0,0);
+    	Triple c = new Triple(0,1,0);
+    	Triple p = new Triple(.75, .75, -1);
+    	Triple e = new Triple(.5, .5, 1);
+    	
+    	System.out.println(Triple_Calc.getIntersection(a, b, c, p, e));
+    }
+    
+    public static void testGetABG(){
+    	Triple a = new Triple(0,0,0);
+    	Triple b = new Triple(1,0,0);
+    	Triple c = new Triple(0,1,0);
+    	Triple p = new Triple(.75, .75, -1);
+    	Triple e = new Triple(.5, .5, 1);
+    	
+    	double[] abg = Triple_Calc.getAlphaBetaGamma(a, b, c, p, e);
+    	
+    	System.out.println("Alpha= " + abg[0] + "\n Beta= " + abg[1] + "\n Gamma=" + abg[2]);
+    	
     }
 }
