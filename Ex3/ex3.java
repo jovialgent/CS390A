@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 import org.lwjgl.*;
 import org.lwjgl.opengl.*;
+
+import basic.RGB;
 import static org.lwjgl.opengl.GL11.*;
 
 import Triple.*;

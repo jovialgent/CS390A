@@ -1,5 +1,6 @@
 package ex3;
 
+import basic.RGB;
 import Triple.Triple;
 
 /**

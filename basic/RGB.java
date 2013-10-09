@@ -1,4 +1,4 @@
-package ex3;
+package basic;
 
 import org.lwjgl.opengl.GL11;
 
